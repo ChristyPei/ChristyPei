@@ -47,3 +47,15 @@ alldata.to_csv( 'Pchome.csv',
                  index=False)
 
 print(alldata.to_csv)
+
+
+#篩選檔案（只篩選所需欄位）
+
+
+
+#只截取部分欄位
+
+pchome_data = pandas.read_csv("Pchome.csv", header=0, usecols=["name", "price", "originPrice"], nrows=100)
+
+print(pchome_data)
+
